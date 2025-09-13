@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Zone | Trang Đăng Nhập</title>
+    <link rel="stylesheet" href="../css/s_login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#" method="">
+          <h1>TẠO TÀI KHOẢN</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <input type="text" placeholder="Họ và tên" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Mật khẩu" required />
+          <button>Đăng ký</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#" method="">
+          <h1>ĐĂNG NHẬP</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+          </div>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Mật khẩu" required />
+          <a href="#">Quên mật khẩu?</a>
+          <button>Đăng nhập</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Chào mừng trở lại!</h1>
+            <p>
+              Để kết nối với chúng tôi, vui lòng đăng nhập bằng thông tin cá
+              nhân của bạn
+            </p>
+            <button class="ghost" id="signIn">Đăng nhập</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>Xin chào, bạn mới!</h1>
+            <p>
+              Hãy nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng
+              tôi
+            </p>
+            <button class="ghost" id="signUp">Đăng ký</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="back">
+      <button class="back-home-btn" onclick="location.href= 'index.html'">
+        QUAY VỀ TRANG CHỦ
+      </button>
+    </div>
+    <script>
+      const container = document.getElementById("container");
+      document.getElementById("signUp").onclick = () => {
+        container.classList.add("right-panel-active");
+      };
+      document.getElementById("signIn").onclick = () => {
+        container.classList.remove("right-panel-active");
+      };
+    </script>
+  </body>
+</html>
