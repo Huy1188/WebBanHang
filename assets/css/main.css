@@ -1,0 +1,159 @@
+.header {
+    width: 100%;
+}
+
+/* header nav */
+.header-banner__img {
+    width: 100%;
+    display: block;
+}
+
+.header-navbar {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #e30019;
+    color: white;
+    height: 80px
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-left-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+.nav-left-item {
+    display: flex;
+    margin: 0 8px;
+}
+
+.nav__logo {
+    width: 60px;
+}
+
+.nav__menu {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.nav__btn {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.nav-search-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    min-width: 300px;
+    color: grey;
+    padding: 10px 5px;
+}
+
+.nav-search-box input {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.nav-search-box button {
+    background-color: white;
+    border: none;
+}
+
+
+.navbar-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-right-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-right-item {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 10px 8px;
+    max-width: 100px;
+}
+
+.nav-right-item__link {
+    text-decoration: none;
+    color: white;
+    margin: 0 5px;
+}
+
+/* header subnav */
+.header-subnav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    height: 40px;
+    
+}
+
+.header-subnav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-subnav-list li {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+.header-subnav-list li::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  width: 1px;
+  height: 60%;
+  background: #ccc; 
+}
+
+
+.header-subnav-list li:last-child::after {
+  display: none;
+}
+
+.subnav__icon {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
+.subnav__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
