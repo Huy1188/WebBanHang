@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHONE ZONE</title>
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-7.0.1-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="/assets/img/main/logo.png">
 </head>
+
 <body>
     <div class="app">
         <header class="header">
@@ -22,7 +26,7 @@
                             <img src="/assets/img/main/logo.png" alt="logo" class="nav__logo">
                         </li>
                         <li class="navbar-left-item">
-                            <button type="button" onclick="alert('Xin chào!')" class="nav__menu">                            
+                            <button type="button" onclick="alert('Xin chào!')" class="nav__menu">
                                 <i class="fa-solid fa-bars"></i>
                                 <span>Danh mục</span>
                             </button>
@@ -31,7 +35,7 @@
                             <div class="nav-search-box">
                                 <input type="text" placeholder="Bạn cần tìm gì?" required>
                                 <button type="button" onclick="alert('Xin chào!')">
-                                <i class="fa fa-search icon"></i>
+                                    <i class="fa fa-search icon"></i>
                                 </button>
                             </div>
                         </li>
@@ -39,59 +43,184 @@
                 </div>
                 <div class="navbar-right">
                     <ul class="nav-right-list">
-                        <li class="nav-right-item">
-                            <i class="fa-regular fa-headphones"></i>
+                        <li class="nav-right-item nav__style-hover">
+                            <a href="">
+                                <i class="fa-regular fa-headphones nav-right-item__icon"></i>
+                            </a>
                             <a href="#" class="nav-right-item__link">Hotline 1900.5301</a>
                         </li>
-                        <li class="nav-right-item">
-                            <i class="fa-solid fa-location-dot"></i>
+                        <li class="nav-right-item nav__style-hover">
+                            <a href="">
+                                <i class="fa-solid fa-location-dot nav-right-item__icon"></i>
+                            </a>
                             <a href="#" class="nav-right-item__link">Hệ thống Showroom</a>
                         </li>
-                        <li class="nav-right-item">
-                            <i class="fa-regular fa-clipboard"></i>
+                        <li class="nav-right-item nav__style-hover">
+                            <a href="">
+                                <i class="fa-regular fa-clipboard nav-right-item__icon"></i>
+                            </a>
                             <a href="#" class="nav-right-item__link">Tra cứu đơn hàng</a>
                         </li>
-                        <li class="nav-right-item">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                        <li class="nav-right-item nav__style-hover">
+                            <a href="">
+                                <i class="fa-solid fa-cart-shopping nav-right-item__icon"></i>
+                            </a>
                             <a href="#" class="nav-right-item__link">Giỏ hàng</a>
                         </li>
-                        <li class="nav-right-item nav__btn">
-                            <i class="fa-solid fa-circle-user"></i>
-                            <a href="#" class="nav-right-item__link">Đăng nhập</a>
-                        </li>
-                    </ul>
-                </div>  
-            </div>
-            <div class="header-subnav">
-                <div class="header-subnav">
-                    <ul class="header-subnav-list">
-                        <li>
-                            <i class="fa-solid fa-newspaper subnav__icon"></i>
-                            <a href="" class="subnav__link">Tin công nghệ</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-wrench subnav__icon"></i>
-                            <a href="" class="subnav__link">Dịch vụ sửa chữa</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-money-check subnav__icon"></i>
-                            <a href="" class="subnav__link">Dịch vụ kỹ thuật tại nhà</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-coins subnav__icon"></i>
-                            <a href="" class="subnav__link">Thu cũ đổi mới</a>
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-shield subnav__icon"></i>
-                            <a href="" class="subnav__link">Tra cứu bảo hành</a>
+                        <li class="nav-right-item nav__login-btn">
+                            <a href="login.html">
+                                <i class="fa-solid fa-circle-user nav-right-item__icon"></i>
+                            </a>
+                            <a href="login.html" class="nav-right-item__link">Đăng</br>nhập</a>
+
+                            <!-- login hover -->
+                            <div class="nav-login-suggest">
+                                <ul class="nav-suggest-container">
+                                    <li class="nav-suggest-item">
+                                        <h3 class="nav-suggest-item__name">
+                                            <i class="fa-regular fa-hand-peace nav-suggest-item__icon"></i>
+                                            Xin chào, vui lòng đăng nhập
+                                        </h3>
+                                    </li>
+                                    <li class="nav-suggest-item nav-suggest__btn">
+                                        <a href="login.html" class="nav-suggest__btn-login">Đăng nhập</a>
+                                        <a href="login.html" class="nav-suggest__btn-register">Đăng kí</a>
+                                    </li>
+                                    <li class="nav-suggest-item">
+                                        <a href="" class="nav-suggest-item__help nav__style-hover">
+                                            <i class="fa-regular fa-circle-question nav-suggest-item__icon"></i>
+                                            Trợ giúp
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="header-subnav">
+                <ul class="header-subnav-list">
+                    <li>
+                        <a href="" class="subnav__link">
+                            <i class="fa-solid fa-newspaper subnav__icon"></i>
+                            Tin công nghệ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="subnav__link">
+                            <i class="fa-solid fa-wrench subnav__icon"></i>
+                            Dịch vụ sửa chữa
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="subnav__link">
+                            <i class="fa-solid fa-money-check subnav__icon"></i>
+                            Dịch vụ kỹ thuật tại nhà
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="subnav__link">
+                            <i class="fa-solid fa-coins subnav__icon"></i>
+                            Thu cũ đổi mới
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="subnav__link">
+                            <i class="fa-solid fa-shield subnav__icon"></i>
+                            Tra cứu bảo hành
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </header>
         <div class="container">
+            <section class="section-layout">
+                <div class="section1">
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-mobile-screen sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Điện Thoại</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <div class="sidebar-hover">
+                            <h1>test sidebar hover</h1>
+                    </div>
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-tablet-screen-button sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Tablet</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
 
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-gamepad sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Phụ kiện</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-money-check sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Thu Cũ Đổi Mới</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-coins sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Hàng Cũ</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-gift sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Khuyến Mãi</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-newspaper sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Tin Công Nghệ</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                    <a href="" class="sidebar-item">
+                        <i class="fa-solid fa-newspaper sidebar-item_firsticon"></i>
+                        <span class="sidebar-item__name">Tin Công Nghệ</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+
+                </div>
+                <div class="section-banner">
+                    <div class="section-banner1">
+                        <a href="">
+                            <img src="https://file.hstatic.net/200000722513/file/gearvn-asus-sat-canh-nhe-ganh-hoc-choi-slider.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="section-banner2">
+                        <a href="">
+                            <img src="https://file.hstatic.net/200000722513/file/gearvn-build-pc-slider-right-t8.png"
+                                alt="">
+                        </a>
+                        <a href="">
+                            <img src="https://file.hstatic.net/200000722513/file/gearvn-ban-phim-slider-right-t8.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-subbanner">
+                <a href="" class="section-subbanner__item">
+                    <img src="https://file.hstatic.net/200000722513/file/gearvn-gaming-gear-deal-hoi-sub-banner-t8.png" alt="">
+                </a>
+                <a href="" class="section-subbanner__item">
+                    <img src="https://file.hstatic.net/200000722513/file/gearvn-man-hinh-sub-t8.png" alt="">
+                </a>
+                <a href="" class="section-subbanner__item">
+                    <img src="https://file.hstatic.net/200000722513/file/gearvn-gaming-gear-sub-t8.png" alt="">
+                </a>
+                <a href="" class="section-subbanner__item">
+                    <img src="https://file.hstatic.net/200000722513/file/gearvn-pc-amd-sub-t8.png" alt="">
+                </a>
+            </section>
         </div>
         <footer class="footer">
 
