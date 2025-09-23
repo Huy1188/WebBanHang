@@ -15,286 +15,293 @@
 
 <body>
     <div class="app">
-        <header class="header">
-            <div class="header-banner">
-                <img src="/assets/img/banner/header-banner.png" alt="" class="header-banner__img">
-            </div>
-            <div class="header-navbar">
-                <div class="navbar-left">
-                    <ul class="navbar-left-list">
-                        <li class="navbar-left-item">
-                            <img src="/assets/img/main/logo1.png" alt="logo" class="nav__logo">
-                        </li>
-                        <li class="navbar-left-item" id="menuBtn">
-                            <button type="button" class="nav__menu">
-                                <i class="fa-solid fa-bars"></i>
-                                <span>Danh mục</span>
-                            </button>
-                            <div class="dropMenu-card">
-                                <ul class="dropMenu-list">
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-mobile-screen dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Điện Thoại</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
+        <!-- <header class="header"> -->
+        <div class="header-banner">
+            <img src="/assets/img/banner/main/header-banner.png" alt="" class="header-banner__img">
+        </div>
+        <div class="navbar">
+            <div class="container-fluid">
+                <div class="header-navbar">
+                    <div class="navbar-left">
+                        <ul class="navbar-left-list">
+                            <li class="navbar-left-item">
+                                <img src="/assets/img/main/logo1.png" alt="logo" class="nav__logo">
+                            </li>
+                            <li class="navbar-left-item dropMenu-btn" id="menuBtn">
+                                <button type="button" class="nav__menu">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <span>Danh mục</span>
+                                </button>
+                                <div class="dropMenu">
+                                    <div class="dropMenu-card">
+                                        <ul class="dropMenu-list">
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-mobile-screen dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Điện Thoại</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
 
-                                        </div>
-                                    </a>
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-tablet-screen-button dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Tablet</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-gamepad dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Phụ kiện</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-money-check dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Thu Cũ Đổi Mới</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-coins dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Hàng Cũ</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-gift dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Khuyến Mãi</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-newspaper "></i>
-                                        <span class="dropMenu__name">Tin Công Nghệ</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-                                    <a href="" class="dropMenu-item">
-                                        <i class="fa-solid fa-newspaper dropMenu__icon"></i>
-                                        <span class="dropMenu__name">Tin Công Nghệ</span>
-                                        <i class="fa-solid fa-angle-right"></i>
-                                        <div class="dropMenu-item-hover">
-
-                                        </div>
-                                    </a>
-                                </ul>
-                                <div class="dropMenu-card-hover">
-                                    <h1>test sidebar hover</h1>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="navbar-left-item">
-                            <div class="nav-search-box">
-                                <div class="nav-search-input">
-                                    <button type="button" onclick="alert('Xin chào!')">
-                                        <i class="fa fa-search icon"></i>
-                                    </button>
-                                    <input type="text" placeholder="Bạn cần tìm gì?" required
-                                        onclick="toggleHistory(true)" onblur="toggleHistory(false)">
-                                    <button type="button" id="close-search" class="search-btn-close"
-                                        onclick="closeHistory()">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </button>
-                                    <!-- History search -->
-                                    <div class="nav-search-suggest" id="search-history">
-                                        <div class="search-banner">
-                                            <img src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/iPhone-17-Pro-PRE-cate-0925.png"
-                                                alt="">
-                                        </div>
-                                        <div class="search-card">
-                                            <ul class="search-head">
-                                                <li class="search-head-item">
-                                                    <span>Lịch sử tìm kiếm</span>
-                                                    <i class="fa-regular fa-clock"></i>
-                                                </li>
-                                                <li class="search-head-item delete-search-history">
-                                                    <span>Xóa tất cả</span>
-                                                    <i class="fa-solid fa-trash"></i>
-                                                </li>
-                                            </ul>
-                                            <ul class="search-history-box">
-                                                <li>
-                                                    <a href="" class="search-history">
-                                                        SamSung
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="search-history">
-                                                        SamSung
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="search-history">
-                                                        SamSung
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="search-history">
-                                                        SamSung
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                            <div class="search-trending">
-                                                <div class="search-trending-heading">
-                                                    <span>Xu hướng tìm kiếm</span>
-                                                    <i class="fa-solid fa-fire" style="color: #f4102f;"></i>
                                                 </div>
-                                                <ul class="search-trending-list">
-                                                    <a href="" class="search-treding-item">
-                                                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
-                                                            alt="">
-                                                        <span class="search-treding__name">Iphone 17 Series</span>
-                                                    </a>
-                                                    <a href="" class="search-treding-item">
-                                                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
-                                                            alt="">
-                                                        <span class="search-treding__name">Iphone 17 Series</span>
-                                                    </a>
-                                                    <a href="" class="search-treding-item">
-                                                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
-                                                            alt="">
-                                                        <span class="search-treding__name">Iphone 17 Series</span>
-                                                    </a>
-                                                    <a href="" class="search-treding-item">
-                                                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
-                                                            alt="">
-                                                        <span class="search-treding__name">Iphone 17 Series</span>
-                                                    </a>
-                                                    <a href="" class="search-treding-item">
-                                                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
-                                                            alt="">
-                                                        <span class="search-treding__name">Iphone 17 Series</span>
-                                                    </a>
-                                                    <a href="" class="search-treding-item">
-                                                        <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
-                                                            alt="">
-                                                        <span class="search-treding__name">Iphone 17 Series</span>
-                                                    </a>
+                                            </a>
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-tablet-screen-button dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Tablet</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-gamepad dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Phụ kiện</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-money-check dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Thu Cũ Đổi Mới</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-coins dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Hàng Cũ</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-gift dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Khuyến Mãi</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-newspaper "></i>
+                                                <span class="dropMenu__name">Tin Công Nghệ</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+                                            <a href="" class="dropMenu-item">
+                                                <i class="fa-solid fa-newspaper dropMenu__icon"></i>
+                                                <span class="dropMenu__name">Tin Công Nghệ</span>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                                <div class="dropMenu-item-hover">
+
+                                                </div>
+                                            </a>
+                                        </ul>
+                                        <div class="dropMenu-card-hover">
+                                            <h1>test sidebar hover</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-left-item">
+                                <div class="nav-search-box">
+                                    <div class="nav-search-input">
+                                        <button type="button" onclick="alert('Xin chào!')">
+                                            <i class="fa fa-search icon"></i>
+                                        </button>
+                                        <input type="text" placeholder="Bạn cần tìm gì?" required
+                                            onclick="toggleHistory(true)" onblur="toggleHistory(false)">
+                                        <button type="button" id="close-search" class="search-btn-close"
+                                            onclick="closeHistory()">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </button>
+                                        <!-- History search -->
+                                        <div class="nav-search-suggest" id="search-history">
+                                            <div class="search-banner">
+                                                <img src="https://cdn2.cellphones.com.vn/x/https://dashboard.cellphones.com.vn/storage/iPhone-17-Pro-PRE-cate-0925.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="search-card">
+                                                <ul class="search-head">
+                                                    <li class="search-head-item">
+                                                        <span>Lịch sử tìm kiếm</span>
+                                                        <i class="fa-regular fa-clock"></i>
+                                                    </li>
+                                                    <li class="search-head-item delete-search-history">
+                                                        <span>Xóa tất cả</span>
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </li>
                                                 </ul>
+                                                <ul class="search-history-box">
+                                                    <li>
+                                                        <a href="" class="search-history">
+                                                            SamSung
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="search-history">
+                                                            SamSung
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="search-history">
+                                                            SamSung
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="" class="search-history">
+                                                            SamSung
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div class="search-trending">
+                                                    <div class="search-trending-heading">
+                                                        <span>Xu hướng tìm kiếm</span>
+                                                        <i class="fa-solid fa-fire" style="color: #f4102f;"></i>
+                                                    </div>
+                                                    <ul class="search-trending-list">
+                                                        <a href="" class="search-treding-item">
+                                                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
+                                                                alt="">
+                                                            <span class="search-treding__name">Iphone 17 Series</span>
+                                                        </a>
+                                                        <a href="" class="search-treding-item">
+                                                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
+                                                                alt="">
+                                                            <span class="search-treding__name">Iphone 17 Series</span>
+                                                        </a>
+                                                        <a href="" class="search-treding-item">
+                                                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
+                                                                alt="">
+                                                            <span class="search-treding__name">Iphone 17 Series</span>
+                                                        </a>
+                                                        <a href="" class="search-treding-item">
+                                                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
+                                                                alt="">
+                                                            <span class="search-treding__name">Iphone 17 Series</span>
+                                                        </a>
+                                                        <a href="" class="search-treding-item">
+                                                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
+                                                                alt="">
+                                                            <span class="search-treding__name">Iphone 17 Series</span>
+                                                        </a>
+                                                        <a href="" class="search-treding-item">
+                                                            <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:40:0/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-cam_4.jpg"
+                                                                alt="">
+                                                            <span class="search-treding__name">Iphone 17 Series</span>
+                                                        </a>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="navbar-right">
-                    <ul class="nav-right-list">
-                        <li class="nav-right-item nav__style-hover">
-                            <a href="">
-                                <i class="fa-regular fa-headphones nav-right-item__icon"></i>
-                            </a>
-                            <a href="#" class="nav-right-item__link">Hotline 1900.5301</a>
-                        </li>
-                        <li class="nav-right-item nav__style-hover">
-                            <a href="">
-                                <i class="fa-solid fa-location-dot nav-right-item__icon"></i>
-                            </a>
-                            <a href="#" class="nav-right-item__link">Hệ thống Showroom</a>
-                        </li>
-                        <li class="nav-right-item nav__style-hover">
-                            <a href="">
-                                <i class="fa-regular fa-clipboard nav-right-item__icon"></i>
-                            </a>
-                            <a href="#" class="nav-right-item__link">Tra cứu đơn hàng</a>
-                        </li>
-                        <li class="nav-right-item nav__style-hover">
-                            <a href="">
-                                <i class="fa-solid fa-cart-shopping nav-right-item__icon"></i>
-                            </a>
-                            <a href="#" class="nav-right-item__link">Giỏ hàng</a>
-                        </li>
-                        <li class="nav-right-item nav__login-btn">
-                            <a href="login.html">
-                                <i class="fa-solid fa-circle-user nav-right-item__icon"></i>
-                            </a>
-                            <a href="login.html" class="nav-right-item__link">Đăng</br>nhập</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-right">
+                        <ul class="nav-right-list">
+                            <li class="nav-right-item nav__style-hover">
+                                <a href="">
+                                    <i class="fa-regular fa-headphones nav-right-item__icon"></i>
+                                </a>
+                                <a href="#" class="nav-right-item__link">Hotline 1900.5301</a>
+                            </li>
+                            <li class="nav-right-item nav__style-hover">
+                                <a href="">
+                                    <i class="fa-solid fa-location-dot nav-right-item__icon"></i>
+                                </a>
+                                <a href="#" class="nav-right-item__link">Hệ thống Showroom</a>
+                            </li>
+                            <li class="nav-right-item nav__style-hover">
+                                <a href="">
+                                    <i class="fa-regular fa-clipboard nav-right-item__icon"></i>
+                                </a>
+                                <a href="#" class="nav-right-item__link">Tra cứu đơn hàng</a>
+                            </li>
+                            <li class="nav-right-item nav__style-hover">
+                                <a href="">
+                                    <i class="fa-solid fa-cart-shopping nav-right-item__icon"></i>
+                                </a>
+                                <a href="#" class="nav-right-item__link">Giỏ</br>hàng</a>
+                            </li>
+                            <li class="nav-right-item nav__login-btn">
+                                <a href="login.html">
+                                    <i class="fa-solid fa-circle-user nav-right-item__icon"></i>
+                                </a>
+                                <a href="login.html" class="nav-right-item__link">Đăng</br>nhập</a>
 
-                            <!-- login hover -->
-                            <div class="nav-login-suggest">
-                                <ul class="nav-suggest-container">
-                                    <li class="nav-suggest-item">
-                                        <h3 class="nav-suggest-item__name">
-                                            <i class="fa-regular fa-hand-peace nav-suggest-item__icon"></i>
-                                            Xin chào, vui lòng đăng nhập
-                                        </h3>
-                                    </li>
-                                    <li class="nav-suggest-item nav-suggest__btn">
-                                        <a href="login.html" class="nav-suggest__btn-login">Đăng nhập</a>
-                                        <a href="login.html" class="nav-suggest__btn-register">Đăng kí</a>
-                                    </li>
-                                    <li class="nav-suggest-item">
-                                        <a href="" class="nav-suggest-item__help nav__style-hover">
-                                            <i class="fa-regular fa-circle-question nav-suggest-item__icon"></i>
-                                            Trợ giúp
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
+                                <!-- login hover -->
+                                <div class="nav-login-suggest">
+                                    <ul class="nav-suggest-container">
+                                        <li class="nav-suggest-item">
+                                            <h3 class="nav-suggest-item__name">
+                                                <i class="fa-regular fa-hand-peace nav-suggest-item__icon"></i>
+                                                Xin chào, vui lòng đăng nhập
+                                            </h3>
+                                        </li>
+                                        <li class="nav-suggest-item nav-suggest__btn">
+                                            <a href="login.html" class="nav-suggest__btn-login">Đăng nhập</a>
+                                            <a href="login.html" class="nav-suggest__btn-register">Đăng kí</a>
+                                        </li>
+                                        <li class="nav-suggest-item">
+                                            <a href="" class="nav-suggest-item__help nav__style-hover">
+                                                <i class="fa-regular fa-circle-question nav-suggest-item__icon"></i>
+                                                Trợ giúp
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="header-subnav">
-                <ul class="header-subnav-list">
-                    <li>
-                        <a href="" class="subnav__link">
-                            <i class="fa-solid fa-newspaper subnav__icon"></i>
-                            Tin công nghệ
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="subnav__link">
-                            <i class="fa-solid fa-wrench subnav__icon"></i>
-                            Dịch vụ sửa chữa
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="subnav__link">
-                            <i class="fa-solid fa-money-check subnav__icon"></i>
-                            Dịch vụ kỹ thuật tại nhà
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="subnav__link">
-                            <i class="fa-solid fa-coins subnav__icon"></i>
-                            Thu cũ đổi mới
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="subnav__link">
-                            <i class="fa-solid fa-shield subnav__icon"></i>
-                            Tra cứu bảo hành
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </header>
+        </div>
+
+        <div class="header-subnav">
+            <ul class="header-subnav-list">
+                <li>
+                    <a href="" class="subnav__link">
+                        <i class="fa-solid fa-newspaper subnav__icon"></i>
+                        Tin công nghệ
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="subnav__link">
+                        <i class="fa-solid fa-wrench subnav__icon"></i>
+                        Dịch vụ sửa chữa
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="subnav__link">
+                        <i class="fa-solid fa-money-check subnav__icon"></i>
+                        Dịch vụ kỹ thuật tại nhà
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="subnav__link">
+                        <i class="fa-solid fa-coins subnav__icon"></i>
+                        Thu cũ đổi mới
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="subnav__link">
+                        <i class="fa-solid fa-shield subnav__icon"></i>
+                        Tra cứu bảo hành
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- </header> -->
         <div class="container">
             <section class="section1-layout">
                 <div class="section1">
-                    <a href="" class="sidebar-item">
+                    <a href="../html/product/products.html" class="sidebar-item">
                         <i class="fa-solid fa-mobile-screen sidebar-item_firsticon"></i>
                         <span class="sidebar-item__name">Điện Thoại</span>
                         <i class="fa-solid fa-angle-right"></i>
@@ -421,7 +428,7 @@
                             alt="">
                         <div class="product-card">
                             <span class="discount">Trả góp 0%</span>
-                            <img src="/assets/img/products/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
+                            <img src="/assets/img/product/phone/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
                             <h2>iPhone 13</h2>
                             <p class="price">15.900.000đ</p>
 
@@ -438,7 +445,7 @@
                         </div>
                         <div class="product-card">
                             <span class="discount">Trả góp 0%</span>
-                            <img src="/assets/img/products/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
+                            <img src="/assets/img/product/phone/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
                             <h2>iPhone 13</h2>
                             <p class="price">15.900.000đ</p>
 
@@ -455,7 +462,7 @@
                         </div>
                         <div class="product-card">
                             <span class="discount">Trả góp 0%</span>
-                            <img src="/assets/img/products/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
+                            <img src="/assets/img/product/phone/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
                             <h2>iPhone 13</h2>
                             <p class="price">15.900.000đ</p>
 
@@ -472,7 +479,7 @@
                         </div>
                         <div class="product-card">
                             <span class="discount">Trả góp 0%</span>
-                            <img src="/assets/img/products/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
+                            <img src="/assets/img/product/phone/iPhone/iphone-16-pro-max.png" alt="iPhone 13" />
                             <h2>iPhone 13</h2>
                             <p class="price">15.900.000đ</p>
 
