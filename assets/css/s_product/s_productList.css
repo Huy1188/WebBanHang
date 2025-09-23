@@ -6,6 +6,12 @@
   font-size: 14px;
 }
 
+.banner,
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 /* banner */
 li {
   list-style: none;
@@ -14,8 +20,8 @@ li {
 .banner {
   display: flex;
   justify-content: space-between;
-  padding: 0px 50px;
   margin-top: 20px;
+  margin-bottom: 40px;
   height: 350px;
 }
 
@@ -75,7 +81,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .banner-right li {
@@ -139,7 +145,7 @@ li {
 .container {
   background: #fff;
   padding: 20px;
-  margin: 20px 50px;
+
   border-radius: 6px;
 }
 
